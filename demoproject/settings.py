@@ -63,7 +63,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['','homeView'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
