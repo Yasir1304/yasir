@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from homeApp.views import homeView
 from pathlib import Path
 import os
 
@@ -62,7 +63,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['','homeView'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
