@@ -8,11 +8,11 @@ from .forms import*
 # Create your views here.
 
 def loginview(r):
-    resp=render(r,"homeApp\index.html")
+    resp=render(r,"homeApp/index.html")
     return resp
 
 def homeView(r):
-    resp=render(r,"homeApp\home.html")
+    resp=render(r,"homeApp/home.html")
     return resp
 
 def registerView(request):
@@ -32,7 +32,7 @@ def registerView(request):
         # return HttpResponse("Employee Registered Successfully !!!!!!!!!!!!!!!!!!!!!!!!!!!")
         allemp=Register.objects.all()
         d1['allemp']=allemp
-    resp=render(request,'homeApp\index.html',context=d1)
+    resp=render(request,'homeApp/index.html',context=d1)
     # return render_to_response('homeApp\index.html', message='Employee Added Successfully')
     return resp
 def addemp(request):
