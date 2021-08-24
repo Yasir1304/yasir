@@ -18,10 +18,11 @@ from customer.models import customer
 from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
-from django.urls.conf import settings
+from django.urls.conf import *
 from django.http.response import HttpResponse
 from django.views.static import serve
 from django.conf.urls.static import url,static
+from demoproject import settings
 # base url=http://127.0.0.1:8000/
 # def mainproject(r):
 #     resp=HttpResponse("This is our main page---MokshiLAla")
