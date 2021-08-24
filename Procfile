@@ -1,0 +1,1 @@
+web: gunicorn yasirmehmood.wsgi --log-file -
