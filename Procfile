@@ -1,1 +1,1 @@
-web: gunicorn yasirmehmood.wsgi --log-file -
+web: gunicorn homeApp.wsgi --log-file -
